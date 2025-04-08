@@ -1,0 +1,93 @@
+2025-01-05 03:48:05 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736030825.pcap
+2025-01-05 03:48:05 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 03:48:06 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 04:02:05 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736031665.pcap
+2025-01-05 04:02:05 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 04:02:06 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 04:24:06 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736032985.pcap
+2025-01-05 04:24:06 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 04:24:06 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 04:31:05 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736033405.pcap
+2025-01-05 04:31:05 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 04:31:06 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:01:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736035240.pcap
+2025-01-05 05:01:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:01:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736035600.pcap
+2025-01-05 05:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:09:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736035720.pcap
+2025-01-05 05:09:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:09:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:15:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736036080.pcap
+2025-01-05 05:15:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:15:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:58:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038660.pcap
+2025-01-05 05:58:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:58:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 05:59:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038720.pcap
+2025-01-05 05:59:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 05:59:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:00:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038780.pcap
+2025-01-05 06:00:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:00:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:01:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038840.pcap
+2025-01-05 06:01:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:01:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:02:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038900.pcap
+2025-01-05 06:02:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:02:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:03:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736038960.pcap
+2025-01-05 06:03:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:03:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:11:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736039440.pcap
+2025-01-05 06:11:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:11:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:14:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736039620.pcap
+2025-01-05 06:14:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:14:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:15:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736039680.pcap
+2025-01-05 06:15:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:15:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:16:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736039740.pcap
+2025-01-05 06:16:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:16:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:18:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736039860.pcap
+2025-01-05 06:18:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:18:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:26:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736040340.pcap
+2025-01-05 06:26:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:26:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:33:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736040761.pcap
+2025-01-05 06:33:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:33:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:40:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736041181.pcap
+2025-01-05 06:40:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:40:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:47:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736041601.pcap
+2025-01-05 06:47:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:47:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 06:55:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042081.pcap
+2025-01-05 06:55:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 06:55:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:03:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042561.pcap
+2025-01-05 07:03:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:03:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:04:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042621.pcap
+2025-01-05 07:04:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:04:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:05:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042681.pcap
+2025-01-05 07:05:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:05:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:06:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042741.pcap
+2025-01-05 07:06:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:06:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042801.pcap
+2025-01-05 07:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:07:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:08:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042861.pcap
+2025-01-05 07:08:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:08:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-05 07:09:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736042921.pcap
+2025-01-05 07:09:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-05 07:09:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file

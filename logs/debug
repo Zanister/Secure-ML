@@ -1,0 +1,50 @@
+2025-01-06 05:02:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736121696.pcap
+2025-01-06 05:02:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-06 05:02:38 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:03:36 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736121756.pcap
+2025-01-06 05:03:36 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-06 05:03:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:04:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736121816.pcap
+2025-01-06 05:04:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: ./
+2025-01-06 05:04:38 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:29:36 INFO  cic.cs.unb.ca.ifm.Cmd    Please select output folder!
+2025-01-06 05:31:37 INFO  cic.cs.unb.ca.ifm.Cmd    Please select output folder!
+2025-01-06 05:32:37 INFO  cic.cs.unb.ca.ifm.Cmd    Please select output folder!
+2025-01-06 05:35:36 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736123676.pcap
+2025-01-06 05:35:36 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 05:35:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:38:36 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736123856.pcap
+2025-01-06 05:38:36 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 05:38:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:45:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736124276.pcap
+2025-01-06 05:45:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 05:45:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 05:54:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736124816.pcap
+2025-01-06 05:54:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 05:54:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:03:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125356.pcap
+2025-01-06 06:03:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:03:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:04:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125416.pcap
+2025-01-06 06:04:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:04:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:05:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125476.pcap
+2025-01-06 06:05:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:05:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:10:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125776.pcap
+2025-01-06 06:10:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:10:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:12:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125896.pcap
+2025-01-06 06:12:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:12:38 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:13:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736125956.pcap
+2025-01-06 06:13:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:13:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:14:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: dump-1736126016.pcap
+2025-01-06 06:14:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: .
+2025-01-06 06:14:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-01-06 06:18:26 INFO  cic.cs.unb.ca.ifm.Cmd    The pcap file or folder does not exist! -> dump-1736030430.pcap
+2025-01-06 06:19:12 INFO  cic.cs.unb.ca.ifm.Cmd    The pcap file or folder does not exist! -> dump-1736030430.pcap
+2025-01-06 06:19:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/CICFlowMeter/bin/dump-1736030430.pcap
+2025-01-06 06:19:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /flow3
+2025-01-06 06:19:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file

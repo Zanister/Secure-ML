@@ -1,0 +1,323 @@
+2025-01-05 05:37:36 - Please select pcap!
+2025-01-05 05:38:53 - You select: /home/zayn/Desktop/IDS-ML/dump-1736030430.pcap
+2025-01-05 05:38:53 - Out folder: csv
+2025-01-05 05:38:53 - CICFlowMeter received 1 pcap file
+2025-01-05 05:43:35 - You select: dump-1736030430.pcap
+2025-01-05 05:43:35 - Out folder: ./
+2025-01-05 05:43:36 - CICFlowMeter received 1 pcap file
+2025-01-05 06:39:39 - Please select pcap!
+2025-01-05 06:42:51 - You select: dump-1736030430.pcap
+2025-01-05 06:42:51 - Out folder: hello
+2025-01-05 06:42:51 - CICFlowMeter received 1 pcap file
+2025-01-06 05:21:11 - Please select output folder!
+2025-01-06 05:21:22 - You select: dump-1736030430.pcap
+2025-01-06 05:21:22 - Out folder: /
+2025-01-06 05:21:22 - CICFlowMeter received 1 pcap file
+2025-01-06 05:24:08 - You select: dump-1736030430.pcap
+2025-01-06 05:24:08 - Out folder: /
+2025-01-06 05:24:08 - CICFlowMeter received 1 pcap file
+2025-01-06 05:46:39 - You select: dump-1736030430.pcap
+2025-01-06 05:46:39 - Out folder: /dump_flow
+2025-01-06 05:46:40 - CICFlowMeter received 1 pcap file
+2025-01-06 06:06:34 - You select: dump-1736030430.pcap
+2025-01-06 06:06:34 - Out folder: /dump2_flow
+2025-01-06 06:06:34 - CICFlowMeter received 1 pcap file
+2025-01-06 06:20:28 - You select: dump-1736030430.pcap
+2025-01-06 06:20:28 - Out folder: /flow3
+2025-01-06 06:20:29 - CICFlowMeter received 1 pcap file
+2025-01-06 06:23:37 - The pcap file or folder does not exist! -> dump-1736126556.pcap
+2025-01-06 06:24:37 - The pcap file or folder does not exist! -> dump-1736126616.pcap
+2025-01-06 06:33:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127156.pcap
+2025-01-06 06:33:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:33:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:35:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127276.pcap
+2025-01-06 06:35:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:35:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:43:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127756.pcap
+2025-01-06 06:43:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:43:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:44:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127816.pcap
+2025-01-06 06:44:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:44:38 - CICFlowMeter received 1 pcap file
+2025-01-06 06:45:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127876.pcap
+2025-01-06 06:45:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:45:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:46:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127936.pcap
+2025-01-06 06:46:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:46:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:47:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736127996.pcap
+2025-01-06 06:47:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:47:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:48:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128056.pcap
+2025-01-06 06:48:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:48:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:49:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128116.pcap
+2025-01-06 06:49:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:49:38 - CICFlowMeter received 1 pcap file
+2025-01-06 06:50:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128176.pcap
+2025-01-06 06:50:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:50:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:53:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128356.pcap
+2025-01-06 06:53:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:53:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:54:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128416.pcap
+2025-01-06 06:54:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:54:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:55:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128476.pcap
+2025-01-06 06:55:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:55:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:56:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128536.pcap
+2025-01-06 06:56:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:56:37 - CICFlowMeter received 1 pcap file
+2025-01-06 06:57:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736128596.pcap
+2025-01-06 06:57:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 06:57:37 - CICFlowMeter received 1 pcap file
+2025-01-06 07:23:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736130156.pcap
+2025-01-06 07:23:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 07:23:37 - CICFlowMeter received 1 pcap file
+2025-01-06 07:24:37 - You select: /home/zayn/Desktop/IDS-ML/dump-1736130216.pcap
+2025-01-06 07:24:37 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-06 07:24:37 - CICFlowMeter received 1 pcap file
+2025-01-31 21:28:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738340852.pcap
+2025-01-31 21:28:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:28:34 - CICFlowMeter received 1 pcap file
+2025-01-31 21:29:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738340912.pcap
+2025-01-31 21:29:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:29:33 - CICFlowMeter received 1 pcap file
+2025-01-31 21:30:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738340972.pcap
+2025-01-31 21:30:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:30:33 - CICFlowMeter received 1 pcap file
+2025-01-31 21:31:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738341032.pcap
+2025-01-31 21:31:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:31:33 - CICFlowMeter received 1 pcap file
+2025-01-31 21:32:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738341092.pcap
+2025-01-31 21:32:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:32:35 - CICFlowMeter received 1 pcap file
+2025-01-31 21:33:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738341152.pcap
+2025-01-31 21:33:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:33:33 - CICFlowMeter received 1 pcap file
+2025-01-31 21:34:33 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738341212.pcap
+2025-01-31 21:34:33 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-01-31 21:34:33 - CICFlowMeter received 1 pcap file
+2025-02-06 11:40:16 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738823954.pcap
+2025-02-06 11:40:16 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:40:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:41:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824014.pcap
+2025-02-06 11:41:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:41:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:42:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824074.pcap
+2025-02-06 11:42:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:42:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:43:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824134.pcap
+2025-02-06 11:43:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:43:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:44:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824194.pcap
+2025-02-06 11:44:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:44:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:45:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824254.pcap
+2025-02-06 11:45:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:45:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:46:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824314.pcap
+2025-02-06 11:46:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:46:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:47:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824374.pcap
+2025-02-06 11:47:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:47:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:48:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824434.pcap
+2025-02-06 11:48:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:48:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:49:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824494.pcap
+2025-02-06 11:49:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:49:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:50:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824554.pcap
+2025-02-06 11:50:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:50:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:51:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824614.pcap
+2025-02-06 11:51:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:51:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:52:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824674.pcap
+2025-02-06 11:52:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:52:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:53:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824734.pcap
+2025-02-06 11:53:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:53:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:54:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824794.pcap
+2025-02-06 11:54:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:54:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:55:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824854.pcap
+2025-02-06 11:55:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:55:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:56:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824914.pcap
+2025-02-06 11:56:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:56:16 - CICFlowMeter received 1 pcap file
+2025-02-06 11:57:15 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738824974.pcap
+2025-02-06 11:57:15 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 11:57:16 - CICFlowMeter received 1 pcap file
+2025-02-06 21:14:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1738825034.pcap
+2025-02-06 21:14:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-02-06 21:14:24 - CICFlowMeter received 1 pcap file
+2025-03-08 16:27:36 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741433195.pcap
+2025-03-08 16:27:36 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:27:36 - CICFlowMeter received 1 pcap file
+2025-03-08 16:28:35 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741433255.pcap
+2025-03-08 16:28:35 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:28:35 - CICFlowMeter received 1 pcap file
+2025-03-08 16:29:35 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741433315.pcap
+2025-03-08 16:29:35 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:29:35 - CICFlowMeter received 1 pcap file
+2025-03-08 16:55:56 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741434895.pcap
+2025-03-08 16:55:56 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:55:58 - CICFlowMeter received 1 pcap file
+2025-03-08 16:56:55 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741434955.pcap
+2025-03-08 16:56:55 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:56:56 - CICFlowMeter received 1 pcap file
+2025-03-08 16:57:55 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741435015.pcap
+2025-03-08 16:57:55 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:57:55 - CICFlowMeter received 1 pcap file
+2025-03-08 16:58:55 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741435075.pcap
+2025-03-08 16:58:55 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:58:56 - CICFlowMeter received 1 pcap file
+2025-03-08 16:59:56 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741435135.pcap
+2025-03-08 16:59:56 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 16:59:56 - CICFlowMeter received 1 pcap file
+2025-03-08 17:00:56 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741435195.pcap
+2025-03-08 17:00:56 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:00:56 - CICFlowMeter received 1 pcap file
+2025-03-08 17:14:51 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436030.pcap
+2025-03-08 17:14:51 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:14:51 - CICFlowMeter received 1 pcap file
+2025-03-08 17:15:51 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436090.pcap
+2025-03-08 17:15:51 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:15:52 - CICFlowMeter received 1 pcap file
+2025-03-08 17:22:03 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436462.pcap
+2025-03-08 17:22:03 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:22:03 - CICFlowMeter received 1 pcap file
+2025-03-08 17:23:03 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436522.pcap
+2025-03-08 17:23:03 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:23:03 - CICFlowMeter received 1 pcap file
+2025-03-08 17:24:03 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436582.pcap
+2025-03-08 17:24:03 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:24:03 - CICFlowMeter received 1 pcap file
+2025-03-08 17:25:03 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741436642.pcap
+2025-03-08 17:25:03 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-08 17:25:03 - CICFlowMeter received 1 pcap file
+2025-03-10 16:34:25 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606403.pcap
+2025-03-10 16:34:25 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:34:26 - CICFlowMeter received 1 pcap file
+2025-03-10 16:35:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606463.pcap
+2025-03-10 16:35:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:35:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:36:24 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606523.pcap
+2025-03-10 16:36:24 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:36:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:37:24 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606583.pcap
+2025-03-10 16:37:24 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:37:25 - CICFlowMeter received 1 pcap file
+2025-03-10 16:38:24 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606643.pcap
+2025-03-10 16:38:24 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:38:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:39:24 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606703.pcap
+2025-03-10 16:39:24 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:39:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:40:25 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606763.pcap
+2025-03-10 16:40:25 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:40:26 - CICFlowMeter received 1 pcap file
+2025-03-10 16:41:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606823.pcap
+2025-03-10 16:41:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:41:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:42:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606883.pcap
+2025-03-10 16:42:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:42:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:43:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741606943.pcap
+2025-03-10 16:43:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:43:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:44:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607003.pcap
+2025-03-10 16:44:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:44:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:45:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607063.pcap
+2025-03-10 16:45:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:45:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:46:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607123.pcap
+2025-03-10 16:46:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:46:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:47:24 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607183.pcap
+2025-03-10 16:47:24 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:47:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:48:23 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607243.pcap
+2025-03-10 16:48:23 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:48:24 - CICFlowMeter received 1 pcap file
+2025-03-10 16:53:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607549.pcap
+2025-03-10 16:53:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:53:30 - CICFlowMeter received 1 pcap file
+2025-03-10 16:54:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607609.pcap
+2025-03-10 16:54:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:54:30 - CICFlowMeter received 1 pcap file
+2025-03-10 16:55:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607669.pcap
+2025-03-10 16:55:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:55:30 - CICFlowMeter received 1 pcap file
+2025-03-10 16:56:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607729.pcap
+2025-03-10 16:56:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:56:30 - CICFlowMeter received 1 pcap file
+2025-03-10 16:57:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607789.pcap
+2025-03-10 16:57:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:57:30 - CICFlowMeter received 1 pcap file
+2025-03-10 16:58:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607849.pcap
+2025-03-10 16:58:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:58:31 - CICFlowMeter received 1 pcap file
+2025-03-10 16:59:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607909.pcap
+2025-03-10 16:59:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 16:59:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:00:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741607969.pcap
+2025-03-10 17:00:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:00:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:01:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608029.pcap
+2025-03-10 17:01:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:01:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:02:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608089.pcap
+2025-03-10 17:02:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:02:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:03:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608149.pcap
+2025-03-10 17:03:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:03:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:04:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608209.pcap
+2025-03-10 17:04:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:04:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:05:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608269.pcap
+2025-03-10 17:05:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:05:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:06:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608329.pcap
+2025-03-10 17:06:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:06:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:07:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608389.pcap
+2025-03-10 17:07:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:07:31 - CICFlowMeter received 1 pcap file
+2025-03-10 17:08:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608449.pcap
+2025-03-10 17:08:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:08:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:09:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608509.pcap
+2025-03-10 17:09:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:09:31 - CICFlowMeter received 1 pcap file
+2025-03-10 17:10:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608569.pcap
+2025-03-10 17:10:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:10:30 - CICFlowMeter received 1 pcap file
+2025-03-10 17:11:30 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1741608629.pcap
+2025-03-10 17:11:30 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-10 17:11:30 - CICFlowMeter received 1 pcap file
+2025-03-18 12:40:55 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283594.pcap
+2025-03-18 12:40:55 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:40:56 - CICFlowMeter received 1 pcap file
+2025-03-18 12:41:54 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283654.pcap
+2025-03-18 12:41:54 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:41:54 - CICFlowMeter received 1 pcap file
+2025-03-18 12:42:54 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283714.pcap
+2025-03-18 12:42:54 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:42:54 - CICFlowMeter received 1 pcap file
+2025-03-18 12:43:54 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283774.pcap
+2025-03-18 12:43:54 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:43:54 - CICFlowMeter received 1 pcap file
+2025-03-18 12:44:54 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283834.pcap
+2025-03-18 12:44:54 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:44:55 - CICFlowMeter received 1 pcap file
+2025-03-18 12:45:54 - You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1742283894.pcap
+2025-03-18 12:45:54 - Out folder: /home/zayn/Desktop/IDS-ML
+2025-03-18 12:45:55 - CICFlowMeter received 1 pcap file
