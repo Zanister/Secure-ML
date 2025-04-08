@@ -1,0 +1,9 @@
+scikit-learn
+pandas
+numpy
+pika
+psycopg2-binary
+tqdm
+pyshark
+tensorflow  # or keras if used in classifier.py
+matplotlib  # if visualization uses plots
