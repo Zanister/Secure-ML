@@ -1,0 +1,86 @@
+    Column       |            Type             | Collation | Nullable |                   Default
+-------------------+-----------------------------+-----------+----------+---------------------------------------------
+ id                | integer                     |           | not null | nextval('dash_trafficlog_id_seq'::regclass)
+ timestamp         | timestamp without time zone |           | not null |
+ src_ip            | text                        |           |          |
+ dst_ip            | text                        |           |          |
+ src_port          | integer                     |           |          |
+ dst_port          | integer                     |           |          |
+ protocol          | text                        |           |          |
+ label             | text                        |           |          |
+ flow_duration     | bigint                      |           |          |
+ tot_fwd_pkts      | integer                     |           |          |
+ tot_bwd_pkts      | integer                     |           |          |
+ fwd_pkts_per_sec  | double precision            |           |          |
+ bwd_pkts_per_sec  | double precision            |           |          |
+ flow_byts_per_sec | double precision            |           |          |
+ flow_pkts_per_sec | double precision            |           |          |
+ flow_iat_mean     | double precision            |           |          |
+ flow_iat_std      | double precision            |           |          |
+ totlen_fwd_pkts   | double precision            |           |          |
+ totlen_bwd_pkts   | double precision            |           |          |
+ fwd_pkt_len_max   | double precision            |           |          |
+ fwd_pkt_len_min   | double precision            |           |          |
+ fwd_pkt_len_mean  | double precision            |           |          |
+ fwd_pkt_len_std   | double precision            |           |          |
+ bwd_pkt_len_max   | double precision            |           |          |
+ bwd_pkt_len_min   | double precision            |           |          |
+ bwd_pkt_len_mean  | double precision            |           |          |
+ bwd_pkt_len_std   | double precision            |           |          |
+ flow_iat_max      | double precision            |           |          |
+ flow_iat_min      | double precision            |           |          |
+ fwd_iat_tot       | double precision            |           |          |
+ fwd_iat_mean      | double precision            |           |          |
+ fwd_iat_std       | double precision            |           |          |
+ fwd_iat_max       | double precision            |           |          |
+ fwd_iat_min       | double precision            |           |          |
+ bwd_iat_tot       | double precision            |           |          |
+ bwd_iat_mean      | double precision            |           |          |
+ bwd_iat_std       | double precision            |           |          |
+ bwd_iat_max       | double precision            |           |          |
+ bwd_iat_min       | double precision            |           |          |
+ fwd_psh_flags     | integer                     |           |          |
+ bwd_psh_flags     | integer                     |           |          |
+ fwd_urg_flags     | integer                     |           |          |
+ bwd_urg_flags     | integer                     |           |          |
+ fwd_header_len    | integer                     |           |          |
+ bwd_header_len    | integer                     |           |          |
+ pkt_len_min       | double precision            |           |          |
+ pkt_len_max       | double precision            |           |          |
+ pkt_len_mean      | double precision            |           |          |
+ pkt_len_std       | double precision            |           |          |
+ pkt_len_var       | double precision            |           |          |
+ fin_flag_cnt      | integer                     |           |          |
+ syn_flag_cnt      | integer                     |           |          |
+ rst_flag_cnt      | integer                     |           |          |
+ psh_flag_cnt      | integer                     |           |          |
+ ack_flag_cnt      | integer                     |           |          |
+ urg_flag_cnt      | integer                     |           |          |
+ cwe_flag_count    | integer                     |           |          |
+ ece_flag_cnt      | integer                     |           |          |
+ down_per_up_ratio | double precision            |           |          |
+ pkt_size_avg      | double precision            |           |          |
+ fwd_seg_size_avg  | double precision            |           |          |
+ bwd_seg_size_avg  | double precision            |           |          |
+ fwd_byts_b_avg    | double precision            |           |          |
+ fwd_pkts_b_avg    | double precision            |           |          |
+ fwd_blk_rate_avg  | double precision            |           |          |
+ bwd_byts_b_avg    | double precision            |           |          |
+ bwd_pkts_b_avg    | double precision            |           |          |
+ bwd_blk_rate_avg  | double precision            |           |          |
+ subflow_fwd_pkts  | integer                     |           |          |
+ subflow_fwd_byts  | bigint                      |           |          |
+ subflow_bwd_pkts  | integer                     |           |          |
+ subflow_bwd_byts  | bigint                      |           |          |
+ init_fwd_win_byts | bigint                      |           |          |
+ init_bwd_win_byts | bigint                      |           |          |
+ fwd_act_data_pkts | integer                     |           |          |
+ fwd_seg_size_min  | integer                     |           |          |
+ active_mean       | double precision            |           |          |
+ active_std        | double precision            |           |          |
+ active_max        | double precision            |           |          |
+ active_min        | double precision            |           |          |
+ idle_mean         | double precision            |           |          |
+ idle_std          | double precision            |           |          |
+ idle_max          | double precision            |           |          |
+ idle_min          | double precision            |           |          |
