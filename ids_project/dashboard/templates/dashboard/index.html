@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network IDS Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnZdoEM6kz7Mv1vFv3K4gWjR0d8pLisn31O2iz7ofn0/NmXWnXuZVx6j5gmgq прапорщик998579986518114674090Gk6bIyqzWjT0pqNN1nLkhK5UVu+0EU5016dlR/qtsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js" crossorigin></script>
+
+    <script>
+        // Get CSRF token from Django
+        function getCSRFToken() {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const c = cookies[i].trim();
+                if (c.startsWith('csrftoken=')) {
+                    return c.substring('csrftoken='.length, c.length);
+                }
+            }
+            return '';
+        }
+        window.csrfToken = getCSRFToken();
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div id="dashboard-root" class="p-4"></div>
+
+    <script>
+        const dashboardSocket = new WebSocket(
+            (window.location.protocol === 'https:' ? 'wss://' : 'ws://') + window.location.host + '/ws/dashboard/'
+        );
+
+        dashboardSocket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+            const event = new CustomEvent('dashboardUpdate', { detail: data });
+            window.dispatchEvent(event);
+        };
+
+        dashboardSocket.onclose = function(e) {
+            console.error('Dashboard WebSocket closed unexpectedly');
+        };
+
+        window.dashboardSocket = dashboardSocket;
+    </script>
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+</html>

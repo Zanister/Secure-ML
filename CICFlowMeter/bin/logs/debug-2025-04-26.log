@@ -1,0 +1,11 @@
+2025-04-26 13:32:01 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1745656260.pcap
+2025-04-26 13:32:01 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-04-26 13:32:02 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-04-26 13:32:03 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-04-26 13:32:03 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-04-26 13:32:03 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-04-26 13:32:03 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1745656260.pcap
+2025-04-26 13:33:01 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1745656320.pcap
+2025-04-26 13:33:01 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-04-26 13:33:01 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-04-26 13:33:02 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1745656320.pcap

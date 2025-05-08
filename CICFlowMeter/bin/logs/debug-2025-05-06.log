@@ -1,0 +1,482 @@
+2025-05-06 04:24:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487425.pcap
+2025-05-06 04:24:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 04:24:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 04:24:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487425.pcap
+2025-05-06 04:25:45 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487485.pcap
+2025-05-06 04:25:45 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 04:25:46 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 04:25:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 04:25:47 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487485.pcap
+2025-05-06 04:29:02 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487680.pcap
+2025-05-06 04:29:02 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 04:29:03 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 04:29:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746487680.pcap
+2025-05-06 04:42:42 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746488501.pcap
+2025-05-06 04:42:42 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 04:42:43 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 04:42:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 04:42:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 04:42:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 04:42:44 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746488501.pcap
+2025-05-06 05:00:33 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746489572.pcap
+2025-05-06 05:00:33 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:00:33 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:00:34 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746489572.pcap
+2025-05-06 05:07:57 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746490017.pcap
+2025-05-06 05:07:57 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:07:58 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:07:58 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746490017.pcap
+2025-05-06 05:26:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491149.pcap
+2025-05-06 05:26:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:26:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:26:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491149.pcap
+2025-05-06 05:27:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491209.pcap
+2025-05-06 05:27:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:27:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:27:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491209.pcap
+2025-05-06 05:28:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491269.pcap
+2025-05-06 05:28:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:28:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:28:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491269.pcap
+2025-05-06 05:29:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491329.pcap
+2025-05-06 05:29:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:29:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:29:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491329.pcap
+2025-05-06 05:30:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491389.pcap
+2025-05-06 05:30:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:30:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:30:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491389.pcap
+2025-05-06 05:36:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491749.pcap
+2025-05-06 05:36:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:36:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:36:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491749.pcap
+2025-05-06 05:37:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491809.pcap
+2025-05-06 05:37:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:37:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:37:51 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491809.pcap
+2025-05-06 05:38:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491869.pcap
+2025-05-06 05:38:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:38:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:38:51 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491869.pcap
+2025-05-06 05:39:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491929.pcap
+2025-05-06 05:39:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:39:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:39:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491929.pcap
+2025-05-06 05:40:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491989.pcap
+2025-05-06 05:40:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:40:51 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:40:51 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746491989.pcap
+2025-05-06 05:41:50 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746492049.pcap
+2025-05-06 05:41:50 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 05:41:50 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 05:41:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746492049.pcap
+2025-05-06 13:14:02 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746492109.pcap
+2025-05-06 13:14:02 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:14:03 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 13:14:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746492109.pcap
+2025-05-06 13:15:02 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746519241.pcap
+2025-05-06 13:15:02 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:15:03 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:15:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 13:15:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 13:15:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 13:15:04 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 4 flow
+2025-05-06 13:15:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746519241.pcap
+2025-05-06 13:26:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746519946.pcap
+2025-05-06 13:26:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:26:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:26:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746519946.pcap
+2025-05-06 13:27:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520006.pcap
+2025-05-06 13:27:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:27:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:27:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520006.pcap
+2025-05-06 13:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520066.pcap
+2025-05-06 13:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:28:47 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@0class org.jnetpcap.protocol.network.Ip4: size=0 bytes
+JMemory: owner=null.class
+********************************************************************************
+0000:*ff ff ff ff  ff ff f2 a0  64 04 42 0a  08 06 00 01    ........d.B.....
+0010: 08 00 06 04  00 01 f2 a0  64 04 42 0a  c0 a8 12 a0    ........d.B.....
+0020: 00 00 00 00  00 00 c0 a8  12 a0                       ..........      
+
+
+2025-05-06 13:28:47 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@7f03b03eb422class org.jnetpcap.protocol.network.Ip4: size=24 bytes
+JMemory: owner=nio.JMemoryPool$Block.class(size=32768/offset=178)
+********************************************************************************
+0000:*ff ff ff ff  ff ff f2 a0  64 04 42 0a  08 06 00 01    ........d.B.....
+0010: 08 00 06 04  00 01 f2 a0  64 04 42 0a  c0 a8 12 a0    ........d.B.....
+0020: 00 00 00 00  00 00 c0 a8  12 a0                       ..........      
+
+
+2025-05-06 13:28:47 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520066.pcap
+2025-05-06 13:35:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520486.pcap
+2025-05-06 13:35:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:35:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:35:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520486.pcap
+2025-05-06 13:36:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520546.pcap
+2025-05-06 13:36:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:36:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:36:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520546.pcap
+2025-05-06 13:37:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520606.pcap
+2025-05-06 13:37:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:37:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520606.pcap
+2025-05-06 13:38:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520666.pcap
+2025-05-06 13:38:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:38:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:38:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520666.pcap
+2025-05-06 13:39:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520726.pcap
+2025-05-06 13:39:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:39:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:39:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520726.pcap
+2025-05-06 13:40:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520786.pcap
+2025-05-06 13:40:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:40:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:40:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520786.pcap
+2025-05-06 13:42:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520906.pcap
+2025-05-06 13:42:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:42:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:42:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520906.pcap
+2025-05-06 13:43:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520966.pcap
+2025-05-06 13:43:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:43:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:43:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746520966.pcap
+2025-05-06 13:44:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521026.pcap
+2025-05-06 13:44:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:44:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:44:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521026.pcap
+2025-05-06 13:46:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521146.pcap
+2025-05-06 13:46:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:46:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:46:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521146.pcap
+2025-05-06 13:47:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521206.pcap
+2025-05-06 13:47:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:47:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:47:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521206.pcap
+2025-05-06 13:48:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521266.pcap
+2025-05-06 13:48:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:48:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:48:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521266.pcap
+2025-05-06 13:50:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521386.pcap
+2025-05-06 13:50:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:50:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:50:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521386.pcap
+2025-05-06 13:51:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521446.pcap
+2025-05-06 13:51:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:51:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:51:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521446.pcap
+2025-05-06 13:55:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521686.pcap
+2025-05-06 13:55:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:55:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:55:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521686.pcap
+2025-05-06 13:56:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521746.pcap
+2025-05-06 13:56:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:56:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:56:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521746.pcap
+2025-05-06 13:59:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521926.pcap
+2025-05-06 13:59:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 13:59:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 13:59:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521926.pcap
+2025-05-06 14:00:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521986.pcap
+2025-05-06 14:00:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:00:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:00:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746521986.pcap
+2025-05-06 14:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746522827.pcap
+2025-05-06 14:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:14:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746522827.pcap
+2025-05-06 14:15:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746522887.pcap
+2025-05-06 14:15:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:15:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:15:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746522887.pcap
+2025-05-06 14:17:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523007.pcap
+2025-05-06 14:17:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:17:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:17:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523007.pcap
+2025-05-06 14:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523667.pcap
+2025-05-06 14:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:28:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 4 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 5 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 6 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 7 flow
+2025-05-06 14:28:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523667.pcap
+2025-05-06 14:29:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523727.pcap
+2025-05-06 14:29:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:29:47 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:29:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523727.pcap
+2025-05-06 14:30:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523787.pcap
+2025-05-06 14:30:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:30:49 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:30:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523787.pcap
+2025-05-06 14:31:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523847.pcap
+2025-05-06 14:31:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:31:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:31:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 14:31:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 14:31:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523847.pcap
+2025-05-06 14:32:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523907.pcap
+2025-05-06 14:32:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:32:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:32:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746523907.pcap
+2025-05-06 14:39:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524327.pcap
+2025-05-06 14:39:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:39:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:39:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524327.pcap
+2025-05-06 14:40:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524387.pcap
+2025-05-06 14:40:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:40:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:40:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524387.pcap
+2025-05-06 14:44:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524627.pcap
+2025-05-06 14:44:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:44:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:44:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 14:44:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524627.pcap
+2025-05-06 14:46:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524747.pcap
+2025-05-06 14:46:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:46:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:46:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524747.pcap
+2025-05-06 14:47:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524807.pcap
+2025-05-06 14:47:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:47:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:47:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524807.pcap
+2025-05-06 14:50:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524987.pcap
+2025-05-06 14:50:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 14:50:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 14:50:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746524987.pcap
+2025-05-06 15:05:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746525887.pcap
+2025-05-06 15:05:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:05:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:05:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746525887.pcap
+2025-05-06 15:06:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746525947.pcap
+2025-05-06 15:06:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:06:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:06:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746525947.pcap
+2025-05-06 15:07:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526007.pcap
+2025-05-06 15:07:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:07:49 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:07:50 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526007.pcap
+2025-05-06 15:09:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526127.pcap
+2025-05-06 15:09:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:09:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:09:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526127.pcap
+2025-05-06 15:13:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526367.pcap
+2025-05-06 15:13:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:13:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:13:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 15:13:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 15:13:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 15:13:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 15:13:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526367.pcap
+2025-05-06 15:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526427.pcap
+2025-05-06 15:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:14:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:14:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 15:14:49 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 15:14:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526427.pcap
+2025-05-06 15:15:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526487.pcap
+2025-05-06 15:15:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:15:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:15:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 15:15:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 15:15:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 4 flow
+2025-05-06 15:15:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 5 flow
+2025-05-06 15:15:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526487.pcap
+2025-05-06 15:16:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526547.pcap
+2025-05-06 15:16:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:16:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:16:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526547.pcap
+2025-05-06 15:17:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526607.pcap
+2025-05-06 15:17:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:17:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:17:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526607.pcap
+2025-05-06 15:18:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526667.pcap
+2025-05-06 15:18:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:18:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:18:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2025-05-06 15:18:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526667.pcap
+2025-05-06 15:19:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526727.pcap
+2025-05-06 15:19:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:19:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:19:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526727.pcap
+2025-05-06 15:20:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526787.pcap
+2025-05-06 15:20:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:20:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:20:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526787.pcap
+2025-05-06 15:23:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526967.pcap
+2025-05-06 15:23:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:23:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:23:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@0class org.jnetpcap.protocol.network.Ip4: size=0 bytes
+JMemory: owner=null.class
+********************************************************************************
+0000:*ff ff ff ff  ff ff a6 ce  0f 7f 4e 7f  08 06 00 01    ..........N.....
+0010: 08 00 06 04  00 01 a6 ce  0f 7f 4e 7f  c0 a8 12 9d    ..........N.....
+0020: 00 00 00 00  00 00 c0 a8  12 9d                       ..........      
+
+
+2025-05-06 15:23:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@0class org.jnetpcap.protocol.network.Ip4: size=0 bytes
+JMemory: owner=null.class
+********************************************************************************
+0000:*ff ff ff ff  ff ff a6 ce  0f 7f 4e 7f  08 06 00 01    ..........N.....
+0010: 08 00 06 04  00 01 a6 ce  0f 7f 4e 7f  c0 a8 12 9d    ..........N.....
+0020: 00 00 00 00  00 00 c0 a8  12 9d                       ..........      
+
+
+2025-05-06 15:23:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@0class org.jnetpcap.protocol.network.Ip4: size=0 bytes
+JMemory: owner=null.class
+********************************************************************************
+0000:*ff ff ff ff  ff ff a6 ce  0f 7f 4e 7f  08 06 00 01    ..........N.....
+0010: 08 00 06 04  00 01 a6 ce  0f 7f 4e 7f  c0 a8 12 9d    ..........N.....
+0020: 00 00 00 00  00 00 c0 a8  12 9d                       ..........      
+
+
+2025-05-06 15:23:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746526967.pcap
+2025-05-06 15:27:47 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527207.pcap
+2025-05-06 15:27:47 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:27:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:27:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527207.pcap
+2025-05-06 15:33:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527567.pcap
+2025-05-06 15:33:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:33:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:33:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527567.pcap
+2025-05-06 15:34:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527627.pcap
+2025-05-06 15:34:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:34:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:34:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527627.pcap
+2025-05-06 15:35:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527687.pcap
+2025-05-06 15:35:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:35:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:35:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527687.pcap
+2025-05-06 15:36:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527747.pcap
+2025-05-06 15:36:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:36:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:36:49 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 15:36:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*d4 6d 6d b6  fa 1c 8c 68  3a 4d 61 c7  08 06 00 01*   .mm....h:Ma.....
+0010: 08 00 06 04  00 02 8c 68  3a 4d 61 c7  c0 a8 12 01    .......h:Ma.....
+0020: d4 6d 6d b6  fa 1c c0 a8  12 5b*                      .mm......[      
+
+
+2025-05-06 15:36:49 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 15:36:49 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 5 flow
+2025-05-06 15:36:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527747.pcap
+2025-05-06 15:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527807.pcap
+2025-05-06 15:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:37:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746527807.pcap
+2025-05-06 15:41:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746528047.pcap
+2025-05-06 15:41:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:41:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:41:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746528047.pcap
+2025-05-06 15:42:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746528107.pcap
+2025-05-06 15:42:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 15:42:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 15:42:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1 flow
+2025-05-06 15:42:48 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2025-05-06 15:42:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746528107.pcap
+2025-05-06 16:18:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746530267.pcap
+2025-05-06 16:18:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:18:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:18:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746530267.pcap
+2025-05-06 16:22:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746530507.pcap
+2025-05-06 16:22:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:22:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:22:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746530507.pcap
+2025-05-06 16:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531407.pcap
+2025-05-06 16:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:37:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:37:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531407.pcap
+2025-05-06 16:38:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531467.pcap
+2025-05-06 16:38:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:38:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:38:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531467.pcap
+2025-05-06 16:39:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531527.pcap
+2025-05-06 16:39:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:39:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:39:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531527.pcap
+2025-05-06 16:40:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531587.pcap
+2025-05-06 16:40:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:40:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:40:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531587.pcap
+2025-05-06 16:45:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531887.pcap
+2025-05-06 16:45:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-06 16:45:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-06 16:45:49 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746531887.pcap

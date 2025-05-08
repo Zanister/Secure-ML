@@ -1,0 +1,12 @@
+2025-05-05 17:07:24 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446783.pcap
+2025-05-05 17:07:24 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-05 17:07:25 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-05 17:07:26 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446783.pcap
+2025-05-05 17:08:24 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446843.pcap
+2025-05-05 17:08:24 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-05 17:08:24 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-05 17:08:25 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446843.pcap
+2025-05-05 17:09:24 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446903.pcap
+2025-05-05 17:09:24 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/zayn/Desktop/IDS-ML
+2025-05-05 17:09:25 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-05 17:09:26 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/zayn/Desktop/IDS-ML/data_Capture/dump-1746446903.pcap
