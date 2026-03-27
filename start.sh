@@ -9,8 +9,8 @@ done
 
 echo "Services are up!"
 
-echo "Running send.py..."
-python3 data_Capture/send.py
+echo "Starting packet producer in background..."
+python3 data_Capture/send.py &
 
-echo "Running receive.py..."
+echo "Starting packet consumer..."
 python3 data_Capture/receive.py

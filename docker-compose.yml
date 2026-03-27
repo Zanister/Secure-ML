@@ -1,18 +1,80 @@
-version: '3.9'
-
 services:
-  app:
+  web:
     build: .
+    image: secure-ml:latest
+    pull_policy: never
     depends_on:
       - rabbitmq
       - postgres
+      - redis
     environment:
-      - DATABASE_URL=postgresql://user:password@postgres:5432/mydb
-      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
-    volumes:
-      - .:/app
+      PYTHONUNBUFFERED: "1"
+      POSTGRES_DB: ${POSTGRES_DB:-netviz}
+      POSTGRES_USER: ${POSTGRES_USER:-netvizuser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-netviz123}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      USE_REDIS: "true"
+    restart: unless-stopped
     ports:
       - "8000:8000"
+    command: sh -c "python ids_project/manage.py migrate --noinput && python ids_project/manage.py runserver 0.0.0.0:8000"
+
+  worker:
+    image: secure-ml:latest
+    pull_policy: never
+    depends_on:
+      - rabbitmq
+      - postgres
+      - redis
+    environment:
+      PYTHONUNBUFFERED: "1"
+      POSTGRES_DB: ${POSTGRES_DB:-netviz}
+      POSTGRES_USER: ${POSTGRES_USER:-netvizuser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-netviz123}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      USE_REDIS: "true"
+      CAPTURE_INTERFACE: ${CAPTURE_INTERFACE:-eth0}
+      CAPTURE_DURATION_SECONDS: ${CAPTURE_DURATION_SECONDS:-60}
+      CFM_DIR: /app/CICFlowMeter/bin
+      MODEL_PATH: ${MODEL_PATH:-}
+      FALLBACK_MODEL_PATH: ${FALLBACK_MODEL_PATH:-/app/models/baseline-ids.joblib}
+      ANOMALY_MODEL_PATH: ${ANOMALY_MODEL_PATH:-/app/models/baseline-anomaly.joblib}
+      MODEL_BOOTSTRAP_CSV: ${MODEL_BOOTSTRAP_CSV:-/app/data_Capture/testdata.csv}
+    restart: unless-stopped
+    volumes:
+      - captures:/captures
+    command: sh -c "python -m processing_analysis.bootstrap_model && python -m data_Capture.receive"
+
+  capture:
+    image: secure-ml:latest
+    pull_policy: never
+    depends_on:
+      - rabbitmq
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      CAPTURE_INTERFACE: ${CAPTURE_INTERFACE:-eth0}
+      CAPTURE_DURATION_SECONDS: ${CAPTURE_DURATION_SECONDS:-60}
+      TCPDUMP_PATH: ${TCPDUMP_PATH:-/usr/bin/tcpdump}
+      PCAP_OUTPUT_DIR: /captures
+    restart: unless-stopped
+    volumes:
+      - captures:/captures
+    command: python -m data_Capture.send
 
   rabbitmq:
     image: rabbitmq:3-management
@@ -23,11 +85,19 @@ services:
   postgres:
     image: postgres:14
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydb
+      POSTGRES_USER: netvizuser
+      POSTGRES_PASSWORD: netviz123
+      POSTGRES_DB: netviz
+    volumes:
+      - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
 volumes:
   pgdata:
+  captures:

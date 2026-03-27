@@ -1,17 +1,23 @@
 import os
+import sys
 import time
 import pika
+import traceback
 import numpy as np
 import pandas as pd
+import joblib
 from sklearn.preprocessing import MinMaxScaler
-from keras.models import load_model
+from sklearn.ensemble import IsolationForest, RandomForestClassifier
 import psycopg2
 import psycopg2.extras
 from datetime import datetime
+from pathlib import Path
 from sqlalchemy import types
+from asgiref.sync import async_to_sync
 from processing_analysis.netflow_converter import PcapToNetFlow
 from processing_analysis.classifier import NeuralNetworkClassifier
 from processing_analysis.preprocessor import PreProcessNetFlowCsv
+from processing_analysis.labeling import categorize_flow
 
 # Suppress TensorFlow warnings
 def tensorflow_shutup():
@@ -24,9 +30,107 @@ def tensorflow_shutup():
 
 tensorflow_shutup()
 
+
+class SklearnFlowClassifier:
+    """Lightweight fallback model when TensorFlow model is unavailable."""
+
+    def __init__(self, model_path, anomaly_model_path=None):
+        self.model_path = Path(model_path)
+        self.anomaly_model_path = Path(anomaly_model_path) if anomaly_model_path else None
+        self.classifier = None
+        self.anomaly_model = None
+        self.expects_3d = False
+
+    def load_or_train(self, training_csv):
+        if self.model_path.exists():
+            self.classifier = joblib.load(self.model_path)
+            print(f"[*] Loaded fallback sklearn model from {self.model_path}")
+            if self.anomaly_model_path and self.anomaly_model_path.exists():
+                self.anomaly_model = joblib.load(self.anomaly_model_path)
+                print(f"[*] Loaded anomaly model from {self.anomaly_model_path}")
+            return
+
+        print(f"[WARN] Fallback model not found at {self.model_path}; training from {training_csv}")
+        df = pd.read_csv(training_csv, low_memory=False)
+        if df.empty or 'Label' not in df.columns:
+            raise RuntimeError("Cannot train fallback model: dataset empty or Label missing.")
+
+        y_train = pd.Series(df['Label']).astype(str).str.lower().apply(
+            lambda v: 0 if v in {"normal", "benign", "no label"} else 1
+        ).to_numpy()
+        feature_drop = ['Flow ID', 'Timestamp', 'Src IP', 'Dst IP', 'Src Port', 'Dst Port', 'Protocol', 'Label']
+        x_train = df.drop(columns=feature_drop, errors='ignore')
+        x_train = x_train.apply(pd.to_numeric, errors='coerce').replace([np.inf, -np.inf], np.nan).fillna(0.0)
+        x_train = x_train.clip(lower=-1e12, upper=1e12).astype('float32').to_numpy()
+        if x_train.size == 0:
+            raise RuntimeError("Cannot train fallback model: no numeric features found.")
+
+        self.classifier = RandomForestClassifier(
+            n_estimators=180,
+            max_depth=18,
+            min_samples_split=4,
+            random_state=42,
+            n_jobs=-1,
+            class_weight="balanced_subsample",
+        )
+        self.classifier.fit(x_train, y_train)
+        benign_train = x_train[y_train == 0]
+        if len(benign_train) < 64:
+            benign_train = x_train
+        self.anomaly_model = IsolationForest(
+            n_estimators=180,
+            contamination=0.08,
+            random_state=42,
+            n_jobs=-1,
+        )
+        self.anomaly_model.fit(benign_train)
+        self.model_path.parent.mkdir(parents=True, exist_ok=True)
+        joblib.dump(self.classifier, self.model_path)
+        if self.anomaly_model_path:
+            joblib.dump(self.anomaly_model, self.anomaly_model_path)
+        print(f"[*] Trained and saved fallback sklearn model to {self.model_path}")
+
+    def predict(self, x):
+        if self.classifier is None:
+            raise RuntimeError("Fallback classifier is not initialized.")
+        # Defensive reshape in case 3D tensor is provided by older paths.
+        if isinstance(x, np.ndarray) and x.ndim == 3:
+            x = x[:, 0, :]
+        pred_supervised = self.classifier.predict(x).astype(int)
+        if self.anomaly_model is None:
+            return pred_supervised
+        pred_anomaly = (self.anomaly_model.predict(x) == -1).astype(int)
+        # Hybrid decision: flag if either known-attack classifier or anomaly detector triggers.
+        return np.maximum(pred_supervised, pred_anomaly)
+
+
+# WebSocket broadcast setup (for raw SQL inserts that bypass Django post_save signals)
+channel_layer = None
+severity_mapper = None
+try:
+    ids_project_dir = Path(__file__).resolve().parents[1] / "ids_project"
+    if str(ids_project_dir) not in sys.path:
+        sys.path.insert(0, str(ids_project_dir))
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ids_project.settings")
+    import django
+    from channels.layers import get_channel_layer
+
+    django.setup()
+    from dashboard.threat_engine import alert_severity_from_stored_fields
+
+    channel_layer = get_channel_layer()
+    severity_mapper = alert_severity_from_stored_fields
+    print("[*] Realtime channel layer initialized in worker.")
+except Exception as ws_init_error:
+    print(f"[WARN] Realtime channel setup unavailable in worker: {ws_init_error}")
+
 # RabbitMQ setup
 try:
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+    rabbit_host = os.getenv("RABBITMQ_HOST", "127.0.0.1")
+    rabbit_port = int(os.getenv("RABBITMQ_PORT", "5672"))
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters(host=rabbit_host, port=rabbit_port)
+    )
     channel = connection.channel()
     channel.exchange_declare(exchange='logs', exchange_type='fanout')
     result = channel.queue_declare(queue='', exclusive=True)
@@ -40,26 +144,88 @@ except Exception as e:
 # PostgreSQL connection
 try:
     conn = psycopg2.connect(
-        user="netvizuser",
-        password="netviz123",
-        host="127.0.0.1",
-        port="5432",
-        database="netviz"
+        user=os.getenv("POSTGRES_USER", "netvizuser"),
+        password=os.getenv("POSTGRES_PASSWORD", "netviz123"),
+        host=os.getenv("POSTGRES_HOST", "127.0.0.1"),
+        port=os.getenv("POSTGRES_PORT", "5432"),
+        database=os.getenv("POSTGRES_DB", "netviz")
     )
     print("[*] Connected to PostgreSQL database.")
 except Exception as e:
     print(f"Error connecting to PostgreSQL: {e}")
     exit(1)
 
-# Load the neural network model
-model_path = '/home/zayn/Desktop/IDS-ML/models/dnn-model.hdf5'
+# Load model (TensorFlow NN first, then sklearn fallback)
+default_nn_path = Path(__file__).resolve().parents[1] / "models" / "dnn-model.hdf5"
+nn_model_path = os.getenv("MODEL_PATH") or str(default_nn_path)
+fallback_model_path = Path(os.getenv("FALLBACK_MODEL_PATH", str(Path(__file__).resolve().parents[1] / "models" / "baseline-ids.joblib")))
+anomaly_model_path = Path(os.getenv("ANOMALY_MODEL_PATH", str(Path(__file__).resolve().parents[1] / "models" / "baseline-anomaly.joblib")))
+fallback_training_csv = Path(os.getenv("MODEL_BOOTSTRAP_CSV", str(Path(__file__).resolve().parent / "testdata.csv")))
+nnc = None
+
 try:
-    nnc = NeuralNetworkClassifier(model_path)
-    nnc.load_model(compile=False)  # Ignore the optimizer configuration
-    print("[*] Neural network model loaded successfully.")
+    nnc = NeuralNetworkClassifier(nn_model_path)
+    nnc.load_model(compile=False)
+    if getattr(nnc, "classifier", None) is None:
+        raise RuntimeError("Neural network model object is not initialized after load.")
+    print(f"[*] Neural network model loaded from {nn_model_path}")
 except Exception as e:
-    print(f"Error loading the neural network model: {e}")
-    exit(1)
+    print(f"[WARN] Neural network model unavailable: {e}")
+    try:
+        sk = SklearnFlowClassifier(fallback_model_path, anomaly_model_path)
+        sk.load_or_train(fallback_training_csv)
+        nnc = sk
+        print("[*] Using sklearn fallback model for live inference.")
+    except Exception as sk_err:
+        print(f"[WARN] Sklearn fallback model unavailable: {sk_err}")
+        nnc = None
+
+
+def push_notify(total_threats, message):
+    """
+    Placeholder notifier for local development.
+    Replace with email/Slack/webhook integration when needed.
+    """
+    print(f"[NOTIFY] Threats={total_threats} message={message}")
+
+
+def broadcast_realtime_updates(df):
+    """Push alert updates to the dashboard websocket group."""
+    if channel_layer is None or df is None or df.empty:
+        return
+    if 'label' not in df.columns:
+        return
+
+    threat_df = df[df["label"].astype(str) != "Normal"].tail(30)
+    if threat_df.empty:
+        return
+
+    for _, row in threat_df.iterrows():
+        label = str(row.get("label", "") or "")
+        t_type = str(row.get("threat_type", "") or "")
+        t_family = str(row.get("threat_family", "") or "")
+        severity = "medium"
+        if severity_mapper is not None:
+            severity = severity_mapper(label, t_type, t_family)
+
+        payload = {
+            "id": None,
+            "timestamp": str(row.get("timestamp", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))),
+            "src_ip": str(row.get("src_ip", "") or ""),
+            "dst_ip": str(row.get("dst_ip", "") or ""),
+            "protocol": str(row.get("protocol", "") or ""),
+            "label": label,
+            "threat_type": t_type,
+            "threat_family": t_family,
+            "threat_detail": str(row.get("threat_detail", "") or ""),
+            "detection_source": str(row.get("detection_source", "") or ""),
+            "confidence": float(row.get("confidence")) if row.get("confidence") is not None else None,
+            "severity": severity,
+        }
+        async_to_sync(channel_layer.group_send)(
+            "dashboard_updates",
+            {"type": "alert_update", "data": payload},
+        )
 
 
 def process_file(filename):
@@ -206,10 +372,17 @@ def process_file(filename):
             print("[ERROR] No features extracted for prediction. Aborting.")
             return
 
-        x = np.expand_dims(x, axis=1)  # Add time dimension for model
-        print(f"x shape: {x.shape}")
-        y_pred = nnc.predict(x)
-        print(f"y_pred shape: {y_pred.shape}")
+        x_model = np.expand_dims(x, axis=1) if getattr(nnc, "expects_3d", False) else x
+        print(f"x shape for model: {x_model.shape}")
+        if nnc is None:
+            print("[WARN] Model unavailable. Applying rule-based threat labeling.")
+            y_pred = np.zeros(len(original_df), dtype=int)
+            for idx in range(len(original_df)):
+                info = categorize_flow(original_df.iloc[idx])
+                y_pred[idx] = 1 if info["is_threat"] else 0
+        else:
+            y_pred = nnc.predict(x_model)
+            print(f"y_pred shape: {y_pred.shape}")
 
         # Convert predictions to class labels
         if y_pred.ndim > 1 and y_pred.shape[1] > 1:
@@ -224,9 +397,81 @@ def process_file(filename):
             min_len = min(len(y_pred), len(complete_df))
             y_pred = y_pred[:min_len]
             complete_df = complete_df.iloc[:min_len].copy()
+            original_df = original_df.iloc[:min_len].copy()
 
-        # Add predictions to the complete dataframe
-        complete_df["Label"] = pd.Series(y_pred.astype(int)).map({0: "Normal", 1: "Threat"})
+        # Rich labels + threat metadata (NIDS-style)
+        labels, t_types, t_fams, t_details = [], [], [], []
+        detection_sources, confidences = [], []
+        model_mode = "rule_only" if nnc is None else ("hybrid_sklearn" if isinstance(nnc, SklearnFlowClassifier) else "neural")
+        for i in range(len(complete_df)):
+            row = original_df.iloc[i]
+            info = categorize_flow(row)
+            pred = int(y_pred[i]) if i < len(y_pred) else 0
+
+            if nnc is None:
+                if info["is_threat"]:
+                    labels.append(info["label"])
+                    t_types.append(info.get("threat_type") or "")
+                    t_fams.append(info.get("threat_family") or "")
+                    t_details.append(info.get("threat_detail") or "")
+                    detection_sources.append("RULE_ENGINE")
+                    confidences.append(0.86)
+                else:
+                    labels.append("Normal")
+                    t_types.append("")
+                    t_fams.append("")
+                    t_details.append("")
+                    detection_sources.append("RULE_ENGINE")
+                    confidences.append(0.98)
+            else:
+                if pred == 0:
+                    labels.append("Normal")
+                    t_types.append("")
+                    t_fams.append("")
+                    t_details.append("")
+                    detection_sources.append("ML_MODEL")
+                    confidences.append(0.89)
+                else:
+                    if info["is_threat"]:
+                        if model_mode == "hybrid_sklearn":
+                            labels.append(f"{info['label']} (Hybrid ML corroborated)")
+                            t_types.append((info.get("threat_type") or "RULE") + "_HYBRID")
+                            detection_sources.append("HYBRID_RULE_ML")
+                            confidences.append(0.93)
+                        else:
+                            labels.append(f"{info['label']} (ML corroborated)")
+                            t_types.append((info.get("threat_type") or "RULE") + "_ML")
+                            detection_sources.append("NEURAL_RULE_ML")
+                            confidences.append(0.91)
+                        t_fams.append(info.get("threat_family") or "")
+                        base_detail = info.get("threat_detail") or ""
+                        t_details.append(
+                            base_detail + (
+                                "\n • Hybrid detector (RandomForest + anomaly model) also flagged this flow."
+                                if model_mode == "hybrid_sklearn"
+                                else "\n • Neural network model also classified this flow as attack traffic."
+                            )
+                        )
+                    else:
+                        labels.append("Anomaly (hybrid ML)" if model_mode == "hybrid_sklearn" else "Anomaly (neural network)")
+                        t_types.append("HYBRID_ANOMALY" if model_mode == "hybrid_sklearn" else "ML_ANOMALY")
+                        t_fams.append("Unknown")
+                        detection_sources.append("ANOMALY_MODEL" if model_mode == "hybrid_sklearn" else "NEURAL_MODEL")
+                        confidences.append(0.78 if model_mode == "hybrid_sklearn" else 0.74)
+                        t_details.append(
+                            ("Hybrid detector flagged this flow as anomalous. " if model_mode == "hybrid_sklearn"
+                             else "The trained classifier flagged this flow as malicious. ")
+                            +
+                            "Rule-based analysis did not match a specific attack pattern; "
+                            "review PCAP and consider SHAP/LIME or retraining with recent traffic."
+                        )
+
+        complete_df["Label"] = labels
+        complete_df["Threat Type"] = t_types
+        complete_df["Threat Family"] = t_fams
+        complete_df["Threat Detail"] = t_details
+        complete_df["Detection Source"] = detection_sources
+        complete_df["Confidence"] = confidences
         
         # DEBUG: Print column names before normalization
         print("\n[DEBUG] Column names BEFORE normalization:")
@@ -551,6 +796,7 @@ def process_file(filename):
                         
                 debug_save(complete_df)
             print("Successfully saved to database!")
+            broadcast_realtime_updates(complete_df)
         except Exception as db_error:
             print(f"Database save error: {str(db_error)}")
             traceback.print_exc()
@@ -579,11 +825,12 @@ def process_file(filename):
                         # Try saving again
                         save_to_database(complete_df)
                         print("Save successful after adding missing columns from error message!")
+                        broadcast_realtime_updates(complete_df)
                 except Exception as final_error:
                     print(f"Final error: {str(final_error)}")
                     traceback.print_exc()
 
-        total_threats = (complete_df["label"] == "Threat").sum()
+        total_threats = (complete_df["label"].astype(str) != "Normal").sum()
         print(f"Total Threats Detected: {total_threats}")
         if total_threats > 0:
             print(f"[*] ALERT: {total_threats} threats detected!")

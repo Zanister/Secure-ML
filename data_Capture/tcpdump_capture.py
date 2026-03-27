@@ -1,5 +1,6 @@
 import os
 import subprocess
+import shutil
 
 class TcpDump:
     """
@@ -13,11 +14,13 @@ class TcpDump:
         """
         self.pcap_file = pcap_file
         self.proc = None
-        self.tcpdump_path = '/usr/bin/tcpdump'
+        self.tcpdump_path = os.getenv("TCPDUMP_PATH") or shutil.which("tcpdump")
 
         # Check if tcpdump exists
-        if not os.path.isfile(self.tcpdump_path):
-            raise FileNotFoundError(f"Cannot find tcpdump at {self.tcpdump_path}")
+        if not self.tcpdump_path or not os.path.isfile(self.tcpdump_path):
+            raise FileNotFoundError(
+                "Cannot find tcpdump binary. Set TCPDUMP_PATH or install tcpdump."
+            )
 
     def start(self, duration, iface):
         """

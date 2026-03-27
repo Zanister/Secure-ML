@@ -1,5 +1,9 @@
-from keras.models import load_model
 import numpy as np
+
+try:
+    from keras.models import load_model
+except Exception:
+    load_model = None
 
 class NeuralNetworkClassifier:
     """
@@ -15,12 +19,18 @@ class NeuralNetworkClassifier:
         self.classifier = None  # Loaded model instance
         self.x = None  # Input features
         self.y = None  # Predicted labels
+        self.expects_3d = True
 
     def load_model(self, compile=True):
         """
         Load the pre-trained neural network model.
         """
         try:
+            if load_model is None:
+                raise ImportError(
+                    "Keras/TensorFlow is not installed. Set MODEL_PATH with a compatible runtime "
+                    "or run in fallback mode without model inference."
+                )
             self.classifier = load_model(self.model_name, compile=compile)
             print(f"Model loaded successfully from {self.model_name}")
         except Exception as e:

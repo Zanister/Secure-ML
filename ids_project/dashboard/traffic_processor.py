@@ -7,6 +7,7 @@ from asgiref.sync import async_to_sync
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from .models import TrafficLog
+from .threat_engine import alert_severity_from_stored_fields
 import joblib
 import numpy as np
 import os
@@ -107,15 +108,20 @@ def process_new_traffic_log(sender, instance, created, **kwargs):
     }
     
     # If this is an alert (has a label), prepare alert broadcast
-    if instance.label:
-        # Determine severity based on label
-        severity = 'low'
-        if any(kw in instance.label.lower() for kw in ['attack', 'injection', 'xss', 'ddos']):
-            severity = 'high'
-        elif any(kw in instance.label.lower() for kw in ['scan', 'probe', 'brute']):
-            severity = 'medium'
-        
-        alert_data = {**log_data, 'label': instance.label, 'severity': severity}
+    if instance.label and str(instance.label).strip() != "Normal":
+        severity = alert_severity_from_stored_fields(
+            instance.label, instance.threat_type, instance.threat_family
+        )
+        alert_data = {
+            **log_data,
+            'label': instance.label,
+            'threat_type': instance.threat_type or '',
+            'threat_family': instance.threat_family or '',
+            'threat_detail': instance.threat_detail or '',
+            'detection_source': instance.detection_source or '',
+            'confidence': float(instance.confidence) if instance.confidence is not None else None,
+            'severity': severity,
+        }
         
         # Send alert update via WebSocket
         channel_layer = get_channel_layer()

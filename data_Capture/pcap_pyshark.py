@@ -4,10 +4,13 @@ from processing_analysis.preprocessor import PreProcessNetFlowCsv
 from processing_analysis.classifier import NeuralNetworkClassifier
 
 if __name__ == "__main__":
+    import os
+    capture_iface = os.getenv("CAPTURE_INTERFACE", "eth0")
+    capture_duration = int(os.getenv("CAPTURE_DURATION_SECONDS", "60"))
     while True:
         filename = "realtime.pcap"
         capture = TcpDump(filename)
-        capture.start(duration=60, iface='wlp2s0')
+        capture.start(duration=capture_duration, iface=capture_iface)
         capture.stop()
 
         converter = PcapToNetFlow(filename)

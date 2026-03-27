@@ -35,21 +35,43 @@
     <div id="dashboard-root" class="p-4"></div>
 
     <script>
-        const dashboardSocket = new WebSocket(
-            (window.location.protocol === 'https:' ? 'wss://' : 'ws://') + window.location.host + '/ws/dashboard/'
-        );
+        (function () {
+            const wsUrl =
+                (window.location.protocol === 'https:' ? 'wss://' : 'ws://') +
+                window.location.host +
+                '/ws/dashboard/';
+            let socket = null;
+            let retries = 0;
 
-        dashboardSocket.onmessage = function(e) {
-            const data = JSON.parse(e.data);
-            const event = new CustomEvent('dashboardUpdate', { detail: data });
-            window.dispatchEvent(event);
-        };
+            function connect() {
+                socket = new WebSocket(wsUrl);
+                window.dashboardSocket = socket;
 
-        dashboardSocket.onclose = function(e) {
-            console.error('Dashboard WebSocket closed unexpectedly');
-        };
+                socket.onopen = function () {
+                    retries = 0;
+                    console.info('Dashboard WebSocket connected');
+                };
 
-        window.dashboardSocket = dashboardSocket;
+                socket.onmessage = function (e) {
+                    const data = JSON.parse(e.data);
+                    const event = new CustomEvent('dashboardUpdate', { detail: data });
+                    window.dispatchEvent(event);
+                };
+
+                socket.onclose = function () {
+                    const delay = Math.min(15000, 1000 * Math.pow(2, retries));
+                    retries += 1;
+                    console.warn('Dashboard WebSocket closed; reconnecting in', delay, 'ms');
+                    setTimeout(connect, delay);
+                };
+
+                socket.onerror = function () {
+                    socket.close();
+                };
+            }
+
+            connect();
+        })();
     </script>
 
     <script src="{% static 'js/dashboard.js' %}"></script>

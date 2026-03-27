@@ -5,7 +5,9 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import TrafficLog
 from .serializers import TrafficLogSerializer
+from .threat_engine import alert_severity_from_stored_fields
 from django.db.models import Count
+from django.db import models
 from django.utils import timezone
 import datetime
 
@@ -32,13 +34,15 @@ def traffic_over_time(request):
         normal_count = TrafficLog.objects.filter(
             timestamp__gte=hour_start,
             timestamp__lt=hour_end,
-            label__isnull=True
+        ).filter(
+            models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
         ).count()
         
         suspicious_count = TrafficLog.objects.filter(
             timestamp__gte=hour_start,
             timestamp__lt=hour_end,
-            label__isnull=False
+        ).exclude(
+            models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
         ).count()
         
         traffic_data.append({
@@ -74,21 +78,15 @@ def top_sources(request):
 def recent_alerts(request):
     """Get recent traffic logs with alert labels"""
     alerts = TrafficLog.objects.exclude(
-        label__isnull=True
-    ).exclude(
-        label=''
+        models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
     ).order_by('-timestamp')[:20]
     
     # Add severity based on label (could be enhanced with ML classification)
     alert_data = []
     for alert in alerts:
-        # Simple severity assignment based on label keywords
-        severity = 'low'
-        if any(kw in alert.label.lower() for kw in ['attack', 'injection', 'xss', 'ddos']):
-            severity = 'high'
-        elif any(kw in alert.label.lower() for kw in ['scan', 'probe', 'brute']):
-            severity = 'medium'
-            
+        severity = alert_severity_from_stored_fields(
+            alert.label, alert.threat_type, alert.threat_family
+        )
         alert_data.append({
             'id': alert.id,
             'timestamp': alert.timestamp.strftime('%Y-%m-%d %H:%M:%S'),
@@ -96,7 +94,12 @@ def recent_alerts(request):
             'dst_ip': alert.dst_ip,
             'protocol': alert.protocol,
             'label': alert.label,
-            'severity': severity
+            'threat_type': alert.threat_type or '',
+            'threat_family': alert.threat_family or '',
+            'threat_detail': alert.threat_detail or '',
+            'detection_source': alert.detection_source or '',
+            'confidence': float(alert.confidence) if alert.confidence is not None else None,
+            'severity': severity,
         })
     
     return Response(alert_data)
@@ -111,8 +114,9 @@ def dashboard_stats(request):
     
     alerts_count = TrafficLog.objects.filter(
         timestamp__gte=start_time,
-        label__isnull=False
-    ).exclude(label='').count()
+    ).exclude(
+        models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
+    ).count()
     
     active_hosts = TrafficLog.objects.filter(
         timestamp__gte=start_time

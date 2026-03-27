@@ -1,9 +1,14 @@
-scikit-learn
-pandas
+django
+djangorestframework
+channels
+channels-redis
+python-dotenv
 numpy
+pandas
+scikit-learn
+tqdm
 pika
 psycopg2-binary
-tqdm
+sqlalchemy
 pyshark
-tensorflow  # or keras if used in classifier.py
-matplotlib  # if visualization uses plots
+matplotlib

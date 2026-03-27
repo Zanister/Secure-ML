@@ -3,7 +3,9 @@ import json
 from channels.generic.websocket import AsyncWebsocketConsumer
 from channels.db import database_sync_to_async
 from .models import TrafficLog
+from .threat_engine import alert_severity_from_stored_fields
 from django.db.models import Count
+from django.db import models
 from django.utils import timezone
 import datetime
 
@@ -55,13 +57,15 @@ class DashboardConsumer(AsyncWebsocketConsumer):
             normal_count = TrafficLog.objects.filter(
                 timestamp__gte=hour_start,
                 timestamp__lt=hour_end,
-                label__isnull=True
+            ).filter(
+                models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
             ).count()
             
             suspicious_count = TrafficLog.objects.filter(
                 timestamp__gte=hour_start,
                 timestamp__lt=hour_end,
-                label__isnull=False
+            ).exclude(
+                models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
             ).count()
             
             traffic_data.append({
@@ -94,19 +98,14 @@ class DashboardConsumer(AsyncWebsocketConsumer):
     def get_recent_alerts(self):
         # Similar to recent_alerts view
         alerts = TrafficLog.objects.exclude(
-            label__isnull=True
-        ).exclude(
-            label=''
+            models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
         ).order_by('-timestamp')[:20]
         
         alert_data = []
         for alert in alerts:
-            severity = 'low'
-            if any(kw in alert.label.lower() for kw in ['attack', 'injection', 'xss', 'ddos']):
-                severity = 'high'
-            elif any(kw in alert.label.lower() for kw in ['scan', 'probe', 'brute']):
-                severity = 'medium'
-                
+            severity = alert_severity_from_stored_fields(
+                alert.label, alert.threat_type, alert.threat_family
+            )
             alert_data.append({
                 'id': alert.id,
                 'timestamp': alert.timestamp.strftime('%Y-%m-%d %H:%M:%S'),
@@ -114,7 +113,12 @@ class DashboardConsumer(AsyncWebsocketConsumer):
                 'dst_ip': alert.dst_ip,
                 'protocol': alert.protocol,
                 'label': alert.label,
-                'severity': severity
+                'threat_type': alert.threat_type or '',
+                'threat_family': alert.threat_family or '',
+                'threat_detail': alert.threat_detail or '',
+                'detection_source': alert.detection_source or '',
+                'confidence': float(alert.confidence) if alert.confidence is not None else None,
+                'severity': severity,
             })
         
         return alert_data
@@ -129,8 +133,9 @@ class DashboardConsumer(AsyncWebsocketConsumer):
         
         alerts_count = TrafficLog.objects.filter(
             timestamp__gte=start_time,
-            label__isnull=False
-        ).exclude(label='').count()
+        ).exclude(
+            models.Q(label__isnull=True) | models.Q(label='') | models.Q(label='Normal')
+        ).count()
         
         active_hosts = TrafficLog.objects.filter(
             timestamp__gte=start_time
